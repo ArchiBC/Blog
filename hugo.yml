@@ -1,0 +1,75 @@
+
+# 基础信息
+baseURL: https://archibc.github.io/Blog
+languageCode: zh-cn
+title: ArchiBC Blog
+theme: PaperMod
+
+hasCJKLanguage: true          # 自动检测是否包含中文日文韩文
+enableInlineShortcodes: true  # 允许内联短码
+enableEmoji: true             # 允许使用 Emoji 表情，建议 true
+enableRobotsTXT: true         # 允许爬虫抓取到搜索引擎，建议 true
+summaryLength: 90            # 文章内链卡片获取的文章长度默认是70
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+menu:
+  main:
+    - identifier: search
+      name: 🔍搜索
+      url: search
+      weight: 1
+    - identifier: home
+      name: 🏠主页
+      url: /
+      weight: 3
+    - identifier: links
+      name: 🤝链接
+      url: links
+      weight: 4
+    - identifier: archive
+      name: 📚文章
+      url: archives
+      weight: 2
+
+params:
+  env: production 
+  author: ArchiBC
+  disableThemeToggle: false
+  DateFormat: "2006-01-02"
+  ShowReadingTime: false
+  ShowAllPagesInArchive: true
+
+  profileMode:
+    enabled: true
+    title: "ArchiBC Blog" # optional default will be site title
+    subtitle: "白菜的保留地"
+    imageUrl: "img/logo.jpg" # optional
+    imageWidth: 180 # custom size
+    imageHeight: 180 # custom size
+    buttons:
+      - name: Archive
+        url: archives
+      - name: Rhino & GH
+        url: /Blog/rhinogh
+      - name: Github
+        url: "https://github.com/ArchiBC"
+
+  socialIcons: # optional
+    - name: bilibili
+      url: "https://space.bilibili.com/199530139"
+    - name: github
+      url: "https://github.com/ArchiBC"
+    - name: kofi
+      url: "https://ko-fi.com/archibc"
+    - name: qq
+      url: "https://qm.qq.com/cgi-bin/qm/qr?k=ng5wmEAvuZIWLyvolFtisTZu5UWPx88Q&jump_from=webapi&authKey=cqJzZUyoj3WF5lYsoSI/5LtJ1TklFmd0BS5O/lbfNN5M6oEXCy4QfiLmhPxriTvL"
+  

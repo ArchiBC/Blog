@@ -7,9 +7,6 @@ tags = [ "测试", "无效内容" ]
 disableShare = true
 description = "测试各种hugo功能的帖子"
 
-[cover]
-image = "./assets/"
-
 +++
 
 # 测试功能
@@ -36,4 +33,4 @@ image = "./assets/"
 
 ## 图片插入
 
-![image-20240328182741570](./test.assets/image-20240328182741570.png)
+![image-20240328222846156](image-20240328222846156.png)
