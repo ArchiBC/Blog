@@ -2,3 +2,19 @@ baseURL = 'https://archibc.github.io/Blog/'
 languageCode = 'zh-cn'
 title = 'ArchiBC Blog'
 theme = 'PaperMod'
+
+[params.homeInfoParams]
+Title = "Hi there wave"
+Content = "这里是ArchiBC的保留地，日常分享的内容会放到这里。觉得有用可以给我打赏哦"
+
+[[params.socialIcons]]
+name = "bilibili"
+url = "https://space.bilibili.com/199530139"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ArchiBC"
+
+[[params.socialIcons]]
+name = "kofi"
+url = "https://ko-fi.com/archibc"
