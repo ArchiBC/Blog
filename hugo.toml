@@ -3,8 +3,49 @@ languageCode = 'zh-cn'
 title = 'ArchiBC Blog'
 theme = 'PaperMod'
 
+[[menu.main]]
+identifier = "search"
+name = "搜索"
+url = "search"
+weight = 1
+
+[[menu.main]]
+identifier = "home"
+name = "主页"
+url = "/"
+weight = 2
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "posts"
+weight = 3
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[params]
+env = "production"
+author = "ArchiBC"
+defaultTheme = "auto"
+disableThemeToggle = false
+DateFormat = "2006-01-02"
+ShowShareButtons = true
+ShowReadingTime = true
+displayFullLangName = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+hideFooter = false
+ShowWordCounts = true
+VisitCount = true
+ShowLastMod = true
+ShowToc = true
+TocOpen = false
+comments = true
+
 [params.homeInfoParams]
-Title = "Hi there wave"
+Title = "Hi！"
 Content = "这里是ArchiBC的保留地，日常分享的内容会放到这里。觉得有用可以给我打赏哦"
 
 [[params.socialIcons]]
@@ -19,13 +60,10 @@ url = "https://github.com/ArchiBC"
 name = "kofi"
 url = "https://ko-fi.com/archibc"
 
-[markup]
-[markup.goldmark]
-[markup.goldmark.extensions]
-[markup.goldmark.extensions.passthrough]
-enable = true
-[markup.goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)']]
-[params]
-math = true
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
