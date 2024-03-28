@@ -18,3 +18,14 @@ url = "https://github.com/ArchiBC"
 [[params.socialIcons]]
 name = "kofi"
 url = "https://ko-fi.com/archibc"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)']]
+[params]
+math = true
